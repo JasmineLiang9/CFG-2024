@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah Information Page</title>
+
+<!-- Remember and link to YOUR OWN countries css file -->
+    <link rel="stylesheet" href="utah.css">
+
+</head>
+
+<body>
+
+<!-- Button that takes you to the homepage -->
+    <a href="index.html">
+    <button class="btn">HOME</button>
+    </a>
+
+<!-- Button that has a dropdown of all countries -->
+    <div class="dropdown">
+        <button class="dropbtn">COUNTRIES</button>
+        <div class="dropdown-content">
+          <a href="australia.html">Australia</a>
+          <a href="bali.html">Indonesia</a>
+          <a href="spain.html">Spain</a>
+          <a href="thailand.html">Thailand</a>
+          <a href="utah.html">USA</a>
+        </div>
+      </div>
+
+<!-- Header -->
+      <div class="header">
+        <h1>USA</h1>
+        <p>UTAH</p>
+      </div>
+
+<!-- Two side by side boxes/columns under the header -->
+<div class="container">
+    <div class="boxone">
+<!-- Trying to add the tabs to the top of the first box/column-->
+<div class="tab-header">
+    <div class="tab-link" onclick="showTab(0)">
+        Description
+    </div>
+    <div class="tab-link" onclick="showTab(1)">
+        Population
+    </div>
+    <div class="tab-link" onclick="showTab(2)">
+        Cuisine
+    </div>
+    <div class="tab-link" onclick="showTab(3)">
+        Places to Visit
+    </div>
+</div>
+
+<div class="tab-content active">
+    <h2>Description</h2>
+    <p>
+        Utah is a state in the
+        <span>United States of America</span>,
+        finish writing text.
+    </p>
+</div>
+
+<div class="tab-content">
+    <h2>Population</h2>
+    <p>
+        The population of Utah is
+        <span>number of people</span>,
+        finish writing text.
+    </p>
+</div>
+
+<div class="tab-content">
+    <h2>Cuisine</h2>
+    <p>
+        Write here about the cuisine.
+    </p>
+</div>
+
+<div class="tab-content">
+    <h2>Places to Visit</h2>
+    <p>
+        Write a few bullet points on the best places to visit.
+    </p>
+</div>
+
+<script src="utah.js"> </script>
+</div>
+</div>
+
+    <div class="boxtwo">
+
+<!-- Trying to add the slide show into the second box/column -->
+
+ <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Arches.jpg" style="width:100%">
+      <div class="text">Arches National Park</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Bryce.jpg" style="width:100%">
+      <div class="text">Bryce Canyon</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Zion.jpg" style="width:100%">
+      <div class="text">Zion National Park</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </div>
+</div>
+</div>
+
+</body>
+
+<!-- Add a footer for the Author of the page-->
+<footer>
+
+</footer>
+
+</html>
