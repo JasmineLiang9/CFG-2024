@@ -1,6 +1,6 @@
 /* Home Button */
 .btn {
-    background-color: #000000;
+    background-color: rgb(10, 10, 39);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -9,12 +9,12 @@
 
 /* Change the background color of the home button when hovered over */
   .btn:hover {
-    background-color: #04AA6D;
+    background-color: #c33f27;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #000000;
+    background-color: rgb(10, 10, 39);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -52,9 +52,7 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #04AA6D;}
-
-/* Below button */
+  .dropdown:hover .dropbtn {background-color: #c33f27;}
 
 .main-header {
     text-align: center;
@@ -63,6 +61,7 @@
     font-style: normal;
     font-size: 50px;
 }
+
 h3 {
     text-align: center;
     font-family: "Figtree", sans-serif;
@@ -72,6 +71,7 @@ h3 {
     font-size: 30px;
     margin-top: -20px;
 }
+
 /* img {
     display: flex;
     justify-content: center;
@@ -80,6 +80,7 @@ h3 {
     height: auto;
     margin: auto;
 } */
+
 .hide {
     background: rgb(10, 10, 39);
     color: white;
@@ -93,15 +94,23 @@ h3 {
     padding: 0 5px;
     
 }
+
 .utah-txt {
     top: 70%;
     left: 10%
 }
+
 .spain-txt {
-    top: 60%;
+    top: 68%;
     left: 40%;
 }
+
 .bali-txt {
-    top: 87%;
-    left: 75%
+    top: 99%;
+    left: 78.5%
+}
+
+.thailand-txt {
+  top:80%;
+  left: 68%;
 }
