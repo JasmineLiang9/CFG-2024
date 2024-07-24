@@ -1,6 +1,6 @@
 /* Home Button */
 .btn {
-  background-color: #000000;
+  background-color: rgb(10, 10, 39);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -9,12 +9,12 @@
 
 /* Change the background color of the home button when hovered over */
 .btn:hover {
-  background-color: #04AA6D;
+  background-color: #c33f27;
 }
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #000000;
+  background-color: rgb(10, 10, 39);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -52,13 +52,13 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #04AA6D;}
+.dropdown:hover .dropbtn {background-color: #c33f27;}
 
 /* Header */
 .header {
   padding: 60px;
   text-align: center;
-  background:#04AA6D;
+  background:#44a6ae;
   color: white;
   font-size: 30px;
 }
@@ -68,15 +68,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     /* min-height: 600px; */
 }
-
-/* Left Hand Side Box */
-.boxone {
-    height: 600px;
-    width: 45%;
-    border: 5px solid #000000;
-  }
 
 /* NEED TO FIGURE OUT HOW TO DISPLAY THE BACKGROUND WITHOUT GOING OUTSIDE THE COLUMNS BOUNDARIES */
 
@@ -101,6 +95,15 @@ body {
     align-items: center;
 }
 
+/* Left Hand Side Box */
+.boxone {
+  height: 650px;
+  width: 45%;
+  border: 5px solid #000000;
+  background-color: #717171;
+  float: left;
+}
+
 .tab-header {
     display: flex;
 }
@@ -110,7 +113,7 @@ body {
     padding: 15px;
     text-align: center;
     cursor: pointer;
-    background-color: #04AA6D;
+    background-color: rgb(10, 10, 39);
     color: white;
     transition: background-color 0.3s ease;
 }
@@ -151,6 +154,7 @@ span {
     height: 600px;
     width: 45%;
     border: 5px solid #000000;
+    float: right;
 }
 
 
@@ -228,7 +232,8 @@ span {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+/* .active,  */
+.dot:hover {
   background-color: #717171;
 }
 
