@@ -1,1 +1,265 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Darker text color for readability */
+}
 
+/* Home Button */
+.btn {
+    background-color: #e4002b; 
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Change the background color of the home button when hovered over */
+.btn:hover {
+    background-color: #c33f27;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #e4002b; 
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #333; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color - dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown menu - hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change background color dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #c33f27;
+}
+
+/* Header */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #ffcc00; 
+    color: #e4002b; 
+    font-size: 30px;
+    border-bottom: 5px solid #e4002b; 
+}
+
+/* Container for side-by-side boxes */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: auto; /* Adjust height based on content */
+}
+
+/* Box 1 */
+.boxone {
+    width: 45%;
+    background-color: #fff;
+    border: 5px solid #e4002b; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs Header */
+.tab-header {
+    display: flex;
+    background: #e4002b; 
+}
+
+/* Tab Links */
+.tab-link {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff; 
+    transition: background-color 0.3s ease;
+}
+
+/* Active Tab Link */
+.tab-link:hover {
+    background-color: #fff;
+    color: #e4002b; 
+}
+
+/* Tab Content */
+.tab-content {
+    padding: 20px;
+    display: none;
+}
+
+.tab-content-active {
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e4002b;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Span inside list items */
+span {
+    color: #e4002b; 
+    font-weight: bold;
+}
+
+/* Box 2 */
+.boxtwo {
+    width: 45%;
+    border: 5px solid #e4002b; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Slideshow Items */
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+/* Next & Previous Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #e4002b; 
+    font-weight: bold;
+    font-size: 34px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* next button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(228, 0, 43, 0.8); /* Semi-transparent */
+}
+
+/* Slideshow Caption */
+.text {
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number Text */
+.numbertext {
+    color: #333;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Dots/Bullets/Indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Dot Hover */
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4; }
+    to { opacity: 1; }
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #e4002b; 
+    color: #fff; 
+}
