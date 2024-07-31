@@ -1,0 +1,149 @@
+/* Home Button */
+.btn {
+    background-color: rgb(10, 10, 39);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Change the background color of the home button when hovered over */
+  .btn:hover {
+    background-color: #c33f27;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(10, 10, 39);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #c33f27;}
+
+.main-header {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+/* img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+} */
+
+.hide {
+    background: rgba(10, 10, 39, 0.8);
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0 50px;
+    
+}
+
+.utah-txt {
+    top: 70%;
+    left: 10%
+}
+
+.spain-txt {
+    top: 68%;
+    left: 40%;
+}
+
+.bali-txt {
+    top: 99%;
+    left: 78.5%;
+}
+
+.thailand-txt {
+  top:80%;
+  left: 68%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Change colour of text for link when hover */
+a:hover {
+  cursor: pointer;
+  color: #c33f27;
+}
+
+/* change colour of location pin when hover */
+.marker-bali:hover{
+  cursor: pointer;
+  fill: rgb(10, 10, 39);
+}
+
+.marker-thailand:hover{
+  cursor: pointer;
+  fill: rgb(10, 10, 39);
+}
+
+.marker-utah:hover{
+  cursor: pointer;
+  fill: rgb(10, 10, 39);
+}
+
+.marker-spain:hover{
+  cursor: pointer;
+  fill: rgb(10, 10, 39);
+}
+

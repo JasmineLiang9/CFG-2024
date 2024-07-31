@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Information Page</title>
+
+<!-- Remember and link to YOUR OWN countries css file -->
+    <link rel="stylesheet" href="bali.css">
+
+</head>
+<body>
+
+<!-- Button that takes you to the homepage -->
+    <a href="index.html">
+    <button class="btn">HOME</button>
+    </a>
+
+<!-- Button that has a dropdown of all countries -->
+    <div class="dropdown">
+        <button class="dropbtn">COUNTRIES</button>
+        <div class="dropdown-content">
+          <a href="australia.html">Australia</a>
+          <a href="bali.html">Indonesia</a>
+          <a href="spain.html">Spain</a>
+          <a href="thailand.html">Thailand</a>
+          <a href="utah.html">USA</a>
+        </div>
+      </div>
+
+<!-- Header -->
+      <div class="header">
+        <h1>BALI</h1>
+        <p>Indonesia</p>
+      </div>
+
+<!-- Two side by side boxes/columns under the header -->
+<div class="container">
+    <div class="boxone">
+<!-- Trying to add the tabs to the top of the first box/column-->
+        <div class="tab-header">
+        <div class="tab-link" onclick="showTab(0)">
+            Description
+        </div>
+        <div class="tab-link" onclick="showTab(1)">
+            Population
+        </div>
+        <div class="tab-link" onclick="showTab(2)">
+            Cuisine
+        </div>
+        <div class="tab-link" onclick="showTab(3)">
+            Places to Visit
+        </div>
+    </div>
+    <div class="boxtwo">
+        <!-- Trying to add the slide show into the second box/column -->
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="images/ubud-padi-fields.jpg" style="width:100%">
+                <div class="text">Ubud Padi Field</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="images/nasi-goreng.jpg" style="width:100%">
+                <div class="text">Nasi Goreng - A Balinese Rice Dish</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="images/surfer-in-bali.jpg" style="width:100%">
+                <div class="text">A surfer in Bali</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/balinese-cafe.jpg" style="width:100%">
+                <div class="text">The aesthetic of a Balinese cafe</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/view-from-uluwatu-temple.jpg" style="width:100%">
+                <div class="text">View from Uluwatu Temple</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    
+
+<div class="tab-content active">
+    <h2>Description</h2>
+    <p>
+        <span>Bali</span> is world-renowned for its scenic rice terraces, fragrant cuisine, stunning beaches, and rich culture and tradition. This Indonesian island features elaborate temples, an endless coastline, some of the world's best coral reefs, breathtaking waterfalls, and tranquil retreats. Bali combines leisure and adventure impeccably, offering visitors a unique blend of natural beauty, cultural depth, and exciting activities. Whether exploring the iconic Tanah Lot and Uluwatu temples, diving in vibrant coral reefs, or relaxing in the serene rice paddies of Ubud, Bali provides an unforgettable experience.
+    </p>
+</div>
+
+<div class="tab-content">
+    <h2>Population</h2>
+    <p>
+        Current estimates believe that Bali has a population of approximately 4.3 million people. The island's population is a diverse mix of Balinese, Javanese, and other ethnic groups, contributing to its rich cultural tapestry. The majority of Balinese practice Hinduism, which is evident in the island's numerous temples and religious ceremonies. Bali's population density is highest in the southern regions, particularly in the tourist hubs of Denpasar, Kuta, and Seminyak, while the northern and central areas offer more rural and traditional settings.
+    </p>
+</div>
+
+<div class="tab-content">
+    <h2>Cuisine</h2>
+    <p>
+        Balinese cuisine is a vibrant and aromatic fusion of fresh local ingredients and bold flavors, reflecting the island's rich cultural heritage. Characterized by the use of spices, herbs, and coconut, staples such as rice and noodles form the basis of many dishes. Popular dishes include Nasi Goreng (fried rice), Babi Guling (suckling pig), and Satay Lilit (spiced minced meat on skewers), often accompanied by sambal (a spicy chili paste). With influences from Indonesian, Chinese, and Indian cuisines, Balinese food offers a delightful and diverse culinary experience for visitors.
+    </p>
+    
+</div>
+
+<div class="tab-content">
+    <h2>Places to Visit</h2>
+        <p>
+            <ol type="1">
+            <li><span>Canggu:</span> Located on Bali's southwest coast, Canggu is a vibrant and trendy destination known for its laid-back atmosphere and bohemian vibe. This coastal town offers a unique blend of surf culture, chic cafes, and eclectic boutiques. The black-sand beaches, such as Echo Beach, are perfect for surfing and sunset-watching. Visitors can explore a variety of stylish eateries and beach clubs, indulge in wellness retreats, and enjoy the lively nightlife.</li>
+            <li><span>Uluwatu Temple:</span> Perched on a cliff 70 meters above the Indian Ocean, Uluwatu Temple offers stunning ocean views and dramatic sunsets. It's also famous for its traditional Kecak dance performances, which take place in an amphitheater overlooking the sea.</li>
+            <li><span>Gili Islands:</span> The Gili Islands, situated off the northwest coast of Lombok, are a trio of isles known for their crystal-clear waters, stunning coral reefs, and relaxed atmosphere. Gili Trawangan, the largest and most developed, offers vibrant nightlife and a range of activities from diving to beach parties. Gili Air, with its laid-back charm, is perfect for a more tranquil retreat, featuring serene beaches and excellent snorkeling. Gili Meno, the smallest and quietest, is ideal for those seeking solitude and pristine nature. </li>
+            <li><span>Ubud:</span> Often considered the cultural heart of Bali, Ubud is known for its lush rice terraces, art galleries, and traditional crafts. Key attractions include the Sacred Monkey Forest Sanctuary, Ubud Art Market, and the Tegallalang Rice Terraces. Ubud also offers excellent opportunities for yoga and wellness retreats.</li>
+            </ol>
+        </p>
+    </div>
+
+    <script src="bali.js"> </script>
+    </div>
+</div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </div>
+</div>
+</div>
+
+</body>
+
+<!-- Add a footer for the Author of the page-->
+<footer>
+    <p>Author of page: Laura W</p>
+</footer>
+
+</html>
