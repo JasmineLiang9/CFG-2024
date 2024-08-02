@@ -1,1 +1,204 @@
+/* Home Button */
+.btn {
+    background-color: rgb(10, 10, 39);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Bebas Neue", sans-serif;
+    border: none;
+}
+
+/* Change the background color of the home button when hovered over */
+.btn:hover {
+    background-color: #c33f27;
+}
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: rgb(10, 10, 39);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Bebas Neue", sans-serif;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #c33f27;}
+  
+  /* Header */
+  .header {
+    padding: 60px;
+    text-align: center;
+    background:#44a6ae;
+    color: white;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  /* Making the two boxes sit side by side, not one under eachother, using flexbox */
+  .container {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 600px;
+  }
+  
+  /* Left Hand Side Box Column 1 */
+  .boxone {
+      height: 700px;
+      width: 600px;
+      border: 0px solid #000000;
+    }
+  
+  body {
+      font-family: "Bebas Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+  }
+  
+  .container {
+      max-width: 100vw;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #f1f1f1;
+      overflow-wrap: hidden;
+      height: 100vh;
+  }
+  
+  .tab-header {
+      display: flex;
+  }
+  
+  .tab-link {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      background-color: rgb(10, 10, 39);
+      color: white;
+      transition: background-color 0.3s ease;
+  }
+  
+  .tab-link:hover {
+      background-color: #ffffff;
+      color:#000000
+  }
+  
+  .tab-content {
+      padding: 30px;
+      display: none;
+      height: 650px;
+      
+  }
+  
+  .active {
+      display: block;
+  }
+  
+  h2 {
+      font-size: 24px;
+      font-family: "Bebas Neue", sans-serif;
+      margin-bottom: 15px;
+      color: #ffffff;
+  }
+  
+  p {
+      line-height: 1.6;
+  }
+  
+  span {
+      color: #000000;
+      font-weight: bold;
+      font-family: "Bebas Neue", sans-serif;
+  }
+  
+
+/* Right Hand Side Column Two - Slideshow */
+  .boxtwo {
+      height: 700px;
+      width: 600px;
+      border: 0px solid #ffffff;
+  }
+      
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: rgb(10, 10, 39);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+
+/* Animation added so the slideshow images fade in and out, regardless if you click through them*/
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+  
+/* Footer, if you choose to use one*/
+  footer {
+    padding: 5px;
+    text-align: left;
+    color: rgb(10, 10, 39);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+  }
 
