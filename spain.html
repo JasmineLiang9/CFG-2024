@@ -1,11 +1,15 @@
     <!DOCTYPE html>
     <html lang="en">
+        
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spain Information</title>
 
+        
         <link rel="stylesheet" href="spain.css">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootsrap.min.css">
     </head>
     <body>
 
@@ -27,15 +31,84 @@
         </div>
 
         <!--Header-->
-        <div class="Header">
+        <div class="header">
             <h1>Spain</h1>
+            
         </div>
 
         <!--2 side by side boxes under header-->
-        <div class="Container">
-            <div class="BoxOne">
+    <div class="container">
+            <div class="boxone">
+            <!--Tabs-->
+            <div class="tab-header">
+                <div class="tab-link" onclick="showTab(0)">
+                    Description
+                </div>
+                <div class="tab-link" onclick="showTab(1)">
+                    Population
+                </div>
+                <div class="tab-link" onclick="showTab(2)">
+                    Cuisine
+                </div>
+                <div class="tab-link" onclick="showTab(3)">
+                    Place to Visit
+                </div>
+                
+            </div>
+            <div class="tab-content active">
+                <h2>Description</h2>
+                <p>
+                    <span>Spain</span> is celebrated worldwide for its vibrant culture, stunning architecture, diverse landscapes, and mouth-watering cuisine. This European country boasts ornate palaces, sun-drenched beaches, rolling vineyards, and rich historical heritage. Spain's cities are a tapestry of ancient and modern, with Barcelona's whimsical Gaudí masterpieces, Madrid's world-class art museums, and Seville's enchanting Moorish influences. The country seamlessly blends relaxation and excitement, offering visitors an intoxicating mix of leisurely siestas and pulsating nightlife. Whether wandering through the winding streets of Toledo, basking on the golden beaches of Costa del Sol, savoring tapas in San Sebastian, or marveling at the grandeur of the Alhambra in Granada, Spain delivers an unforgettable journey through history, art, and sensory delights.
+                </p>
+            </div>
 
-        
+            <div class="tab-content'>
+                <h2>Population</h2>
+                <p>
+                Current estimates place Spain's population at approximately 47 million people. The country's demographic landscape is diverse, comprising various ethnic groups including Castilians, Catalans, Basques, and Galicians, each contributing to Spain's rich cultural mosaic. The majority of Spaniards are Roman Catholic, though the country is increasingly secular. Spain's population distribution is uneven, with the highest densities found in big urban centres like Madrid, Barcelona, and Valencia. Coastal areas, particularly along the Mediterranean, also see higher concentrations due to tourism and retirement communities. In contrast, the interior regions, such as Castilla-La Mancha and Extremadura, are more sparsely populated. Spain also has a significant immigrant population, adding to its multicultural character, with large communities from Latin America, North Africa, and Eastern Europe.
+                </p>
+            </div>
+
+             <div class="tab-content">
+                <h2>Cuisine</h2>
+                <p>
+                    Spanish cuisine is a vibrant and diverse tapestry of flavours, reflecting the country's varied regions and rich cultural history. Characterised by the use of olive oil, garlic, and an array of herbs and spices, Spanish dishes often feature fresh seafood, cured meats, and locally grown produce. Iconic dishes include paella (saffron-infused rice with various meats and vegetables), tortilla española (potato omelette), and gazpacho (cold tomato soup). Tapas culture is integral to Spanish dining, offering small, shareable plates like patatas bravas (spicy potatoes) and gambas al ajillo (garlic prawns). With influences from Mediterranean, North African, and New World cuisines, Spanish food provides a delightful culinary journey. The country is also renowned for its wines, with regions like Rioja and Ribera del Duero producing world-class reds, whilst cava offers a sparkling alternative. Whether enjoying a leisurely lunch of fideuà in Valencia or savouring pintxos in San Sebastian, Spanish cuisine offers a memorable and varied gastronomic experience.
+               
+                </p>
+            
+            
+            </div>
+
+            <div class="tab-content">
+                <h2>Place to Visit</h2>
+                <p>
+                    <ol type="1">
+                    <li><span>Barcelona:</span> Nestled along Spain's northeastern coast, Barcelona is a bustling metropolis famed for its unique blend of modernist and Gothic architecture. The city is renowned for the iconic Sagrada Família and Park Güell, designed by the architect Antoni Gaudí. Visitors can explore the vibrant street life of La Rambla, enjoy the sandy shores of Barceloneta Beach, and indulge in the local cuisine at bustling markets like La Boqueria. The city's rich cultural scene includes world-class museums, lively festivals, and dynamic nightlife.</li>
+                    <li><span>La Alhambra:</span> Situated in Granada, the Alhambra is a majestic palace and fortress complex perched atop a hill, offering breathtaking views of the Sierra Nevada mountains. This UNESCO World Heritage site is celebrated for its stunning Islamic architecture, intricate tilework, and beautifully landscaped gardens. Visitors can wander through the palatial rooms of the Nasrid Palaces, explore the fortified Alcazaba, and relax in the serene Generalife gardens.</li>
+                    <li><span>Seville:</span> Known as the cultural and artistic capital of southern Spain, Seville is famous for its historic landmarks, lively flamenco scene, and picturesque streets. Key attractions include the Seville Cathedral and its Giralda bell tower, the impressive Alcázar of Seville, and the bustling Plaza de España. Visitors can also explore the vibrant neighbourhood of Triana, renowned for its ceramic shops and traditional tapas bars, and enjoy boat rides along the Guadalquivir River.</li>
+                    </ol>
+                </p>
+
+
+
+            </div>
+            </div>
+
+            <div class="boxtwo">
+            <!--slideshow-->
+            <div class="slider">
+                <div class="slides"
+                    <img class="slide" src="malaga_sea.jpeg" alt="Sunset in Málaga">
+                    <img class="slide" src="Carmona.jpeg" alt="Carmona">
+                    <img class="slide" src="sevilla_river.jpeg" alt="Kayaker on the Guadalquivir, Seville">
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+        </div>
+
+        <script src='spain.js"> </script>
+                     
     </body>
     </html>
 
