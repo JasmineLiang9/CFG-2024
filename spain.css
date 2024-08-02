@@ -19,7 +19,7 @@
     color: white;
     padding: 16px;
     font-size: 16px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family:sans-serif;
     border: none;
   }
   
@@ -142,7 +142,7 @@
   span {
       color: #000000;
       font-weight: bold;
-      font-family: "Bebas Neue", sans-serif;
+      font-family:sans-serif;
   }
   
 
