@@ -159,14 +159,35 @@
     margin: auto;
     overflow: hidden;
 }
+
+.slide-container{
+    position:relative;
+}
+
 .slider img{
     width: 100%;
     display: none;
 }
+.caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    display: none;
+}
+
 img.displaySlide{
     display: block;
     animation-name: fade;
     animation-duration: 2s;
+}
+img.displaySlide + .caption{
+    display: block;
 }
 .slider button{
     position: absolute;
@@ -178,6 +199,9 @@ img.displaySlide{
     color: white;
     border: none;
     cursor: pointer;
+}
+.slider button:hover{
+    background-color: #c33f27;
 }
 .prev{
     left: 0;
