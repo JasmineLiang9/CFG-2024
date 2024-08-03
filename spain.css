@@ -1,15 +1,15 @@
 /* Home Button */
-.btn {
+.hmbtn {
     background-color: rgb(10, 10, 39);
     color: white;
     padding: 16px;
     font-size: 16px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family:sans-serif;
     border: none;
 }
 
-/* Change the background color of the home button when hovered over */
-.btn:hover {
+/* Change the background colour of the home button when hovered over */
+.hmbtn:hover {
     background-color: #c33f27;
 }
   
