@@ -63,6 +63,13 @@
   font-size: 30px;
   font-family: "Bebas Neue", sans-serif;
 }
+/* Header zoom when hover */
+.header h1 {
+  transition: transform 0.3s ease-in-out;
+}
+.header h1:hover {
+  transform: scale(1.3);
+}
 
 /* Making the two boxes sit side by side, not one under eachother, using flexbox */
 .container {
@@ -113,8 +120,8 @@ body {
 }
 
 .tab-link:hover {
-    background-color: #ffffff;
-    color:#000000
+    background-color: #c33f27;
+    color:#ffffff
 }
 
 .tab-content {
@@ -130,7 +137,7 @@ body {
 
 h2 {
     font-size: 24px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: sans-serif;
     margin-bottom: 15px;
     color: #ffffff;
 }
@@ -163,10 +170,27 @@ span {
   width: 100%;
   display: none;
 }
+/* CAPTIONS 1 of 2*/
+.caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  display: none;
+}
 img.displaySlide{
   display: block;
   animation-name: fade;
   animation-duration: 2s;
+}
+/* CAPTIONS 2 of 2*/
+img.displaySlide + .caption{
+  display: block;
 }
 .slider button{
   position: absolute;
@@ -178,6 +202,9 @@ img.displaySlide{
   color: white;
   border: none;
   cursor: pointer;
+}
+.slider button:hover{
+  background-color: #c33f27;
 }
 .prev{
   left: 0;
@@ -192,6 +219,7 @@ img.displaySlide{
   to {opacity: 1}
 }
 
+/* Footer, if you choose to use one*/
 .footer {
   padding: 5px;
   text-align: center;
