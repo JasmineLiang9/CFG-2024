@@ -193,12 +193,25 @@ img.displaySlide{
 }
   
 /* Footer, if you choose to use one*/
-  footer {
+.footer {
     padding: 5px;
-    text-align: left;
-    color: rgb(10, 10, 39);
+    text-align: center;
+    background-color: rgb(10, 10, 39);
+    color: white;
     font-size: 15px;
-    font-weight: bold;
-    font-family: "Bebas Neue", sans-serif;
+    font-weight: lighter;
+    font-family:  sans-serif;
   }
+
+  .social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 36px;  /* make icons bigger */
+    color: #ffffff;   /* icons white */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #c33f27;  
+}
 
