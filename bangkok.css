@@ -1,252 +1,243 @@
 /* Home Button */
-.btn {
-    background-color: #000000;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+.hmbtn {
+  background-color: rgb(10, 10, 39);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-family:sans-serif;
+  border: none;
+}
+
+/* Change the background colour of the home button when hovered over */
+.hmbtn:hover {
+  background-color: #2746c3;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(10, 10, 39);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-family: "Bebas Neue", sans-serif;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #2746c3;}
+
+/* Header */
+.header {
+  padding: 60px;
+  text-align: center;
+  background:#44a6ae;
+  color: white;
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+}
+/* Header zoom when hover */
+.header h1 {
+  transition: transform 0.3s ease-in-out;
+}
+.header h1:hover {
+  transform: scale(1.3);
+}
+
+/* Making the two boxes sit side by side, not one under eachother, using flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 600px;
+}
+
+/* Left Hand Side Box Column 1 */
+.boxone {
+    height: 700px;
+    width: 600px;
+    border: 0px solid #000000;
   }
-  
-  /* Change the background color of the home button when hovered over */
-  .btn:hover {
-    background-color: #04AA6D;
-  }
-  
-  /* Dropdown Button */
-  .dropbtn {
-    background-color: #000000;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #04AA6D;}
-  
-  /* Header */
-  .header {
-    padding: 60px;
-    text-align: center;
-    background:#04AA6D;
-    color: white;
-    font-size: 30px;
-  }
-  
-  /* Making the two boxes sit side by side, not one under eachother, using flexbox */
-  .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 600px;
-  }
-  
-  /* Left Hand Side Box */
-  .boxone {
-      height: 600px;
-      width: 600px;
-      border: 5px solid #000000;
-    }
-  
-  /* NEED TO FIGURE OUT HOW TO DISPLAY THE BACKGROUND WITHOUT GOING OUTSIDE THE COLUMNS BOUNDARIES */
-  
-  body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #000000;
-  }
-  
-  .container {
-      max-width: 100vw;
-      margin: 0 auto;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #f1f1f1;
-      overflow: hidden;
-      height: 100vh;
-  }
-  
-  .tab-header {
-      display: flex;
-  }
-  
-  .tab-link {
-      flex: 1;
-      padding: 15px;
-      text-align: center;
-      cursor: pointer;
-      background-color: #04AA6D;
-      color: white;
-      transition: background-color 0.3s ease;
-  }
-  
-  .tab-link:hover {
-      background-color: #ffffff;
-      color:#000000
-  }
-  
-  .tab-content {
-      padding: 30px;
-      display: none;
-      height: 100vh;
-      overflow-y: auto;
-  }
-  
-  .active {
-      display: block;
-  }
-  
-  h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      color: #ffffff;
-  }
-  
-  p {
-      line-height: 1.6;
-  }
-  
-  span {
-      color: #000000;
-      font-weight: bold;
-  }
-  
-  /* Right Hand Side Box Two */
-  .boxtwo {
-      height: 600px;
-      width: 600px;
-      border: 5px solid #000000;
-  }
-  
-  
-  /* Slideshow in Box Two - NEED TO TRY AND FIGURE THIS OUT 17072024  */
-  * {box-sizing:border-box}
-  
-  /* Slideshow container */
-  .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: 250px;
-    padding: 16px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 34px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
     color: #000000;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #f1f1f1;
+    overflow-wrap: hidden;
+    height: 100vh;
+}
+
+.tab-header {
+    display: flex;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  
-  /* Footer */
-  footer {
-    padding: 5px;
-    text-align: left;
-    color: rgb(111, 103, 103);
-    font-size: 15px;
+    background-color: rgb(10, 10, 39);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.tab-link:hover {
+    background-color: #2746c3;
+    color:#ffffff
+}
+
+.tab-content {
+    padding: 30px;
+    display: none;
+    height: 650px;
+    
+}
+
+.active {
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+span {
+    color: #000000;
     font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+/* Right Hand Side Column Two - Slideshow */
+.boxtwo {
+    height: 700px;
+    width: 600px;
+    border: 0px solid #ffffff;
+}
+    
+.slider{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider img{
+  width: 100%;
+  display: none;
+}
+/* CAPTIONS 1 of 2*/
+.caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  display: none;
+}
+img.displaySlide{
+  display: block;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+/* CAPTIONS 2 of 2*/
+img.displaySlide + .caption{
+  display: block;
+}
+.slider button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: rgb(10, 10, 39);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.slider button:hover{
+  background-color: #2746c3;
+}
+.prev{
+  left: 0;
+}
+.next{
+  right: 0;
+}
+
+/* Animation added so the slideshow images fade in and out, regardless if you click through them*/
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+/* Footer, if you choose to use one*/
+.footer {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(10, 10, 39);
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family:  sans-serif;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 36px;  /* make icons bigger */
+  color: #ffffff;   /* icons white */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2746c3;  
+}
