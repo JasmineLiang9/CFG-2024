@@ -10,7 +10,7 @@
 
 /* Change the background colour of the home button when hovered over */
 .hmbtn:hover {
-  background-color: #2746c3;
+  background-color: #c33f27;
 }
 
 /* Dropdown Button */
@@ -52,7 +52,7 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #2746c3;}
+.dropdown:hover .dropbtn {background-color: #c33f27;}
 
 /* Header */
 .header {
@@ -120,7 +120,7 @@ body {
 }
 
 .tab-link:hover {
-    background-color: #2746c3;
+    background-color: #c33f27;
     color:#ffffff
 }
 
@@ -204,7 +204,7 @@ img.displaySlide + .caption{
   cursor: pointer;
 }
 .slider button:hover{
-  background-color: #2746c3;
+  background-color: #c33f27;
 }
 .prev{
   left: 0;
@@ -239,5 +239,5 @@ img.displaySlide + .caption{
 }
 
 .social-icons a:hover {
-  color: #2746c3;  
+  color: #c33f27;  
 }
