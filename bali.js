@@ -1,4 +1,3 @@
-
 //this let's us click through the tabs on the left hand column//
 
 function showTab(index) {
