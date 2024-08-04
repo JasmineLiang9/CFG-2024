@@ -4,6 +4,7 @@
   color: white;
   padding: 16px;
   font-size: 16px;
+  font-family: "Bebas Neue", sans-serif;
   border: none;
 }
 
@@ -18,16 +19,15 @@
   color: white;
   padding: 16px;
   font-size: 16px;
+  font-family: "Bebas Neue", sans-serif;
   border: none;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -61,21 +61,27 @@
   background:#44a6ae;
   color: white;
   font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* Making the two boxes sit side by side, not one under eachother, using flexbox */
 .container {
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    /* min-height: 600px; */
+    min-height: 600px;
 }
 
-/* NEED TO FIGURE OUT HOW TO DISPLAY THE BACKGROUND WITHOUT GOING OUTSIDE THE COLUMNS BOUNDARIES */
+/* Left Hand Side Box Column 1 */
+.boxone {
+    height: 700px;
+    width: 600px;
+    border: 0px solid #000000;
+  }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -88,20 +94,8 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px #f1f1f1;
-    overflow: hidden;
+    overflow-wrap: hidden;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Left Hand Side Box */
-.boxone {
-  height: 650px;
-  width: 45%;
-  border: 5px solid #000000;
-  background-color: #717171;
-  float: left;
 }
 
 .tab-header {
@@ -126,8 +120,8 @@ body {
 .tab-content {
     padding: 30px;
     display: none;
-    height: 100vh;
-    overflow-y: auto;
+    height: 650px;
+    
 }
 
 .active {
@@ -136,6 +130,7 @@ body {
 
 h2 {
     font-size: 24px;
+    font-family: "Bebas Neue", sans-serif;
     margin-bottom: 15px;
     color: #ffffff;
 }
@@ -147,114 +142,62 @@ p {
 span {
     color: #000000;
     font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
 }
 
-/* Right Hand Side Box Two */
+
+/* Right Hand Side Column Two - Slideshow */
 .boxtwo {
-    height: 600px;
-    width: 45%;
-    border: 5px solid #000000;
-    float: right;
+    height: 700px;
+    width: 600px;
+    border: 0px solid #ffffff;
 }
-
-
-/* Slideshow in Box Two - NEED TO TRY AND FIGURE THIS OUT 17072024  */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-
-/* Hide the images by default */
-.mySlides {
+    
+.slider{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider img{
+  width: 100%;
   display: none;
 }
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+img.displaySlide{
+  display: block;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+.slider button{
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: 250px;
-  padding: 16px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 34px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #000000;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
+  transform: translateY(-50%);
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: rgb(10, 10, 39);
+  color: white;
+  border: none;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+}
+.prev{
+  left: 0;
+}
+.next{
+  right: 0;
 }
 
-/* .active,  */
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
+/* Animation added so the slideshow images fade in and out, regardless if you click through them*/
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .5}
   to {opacity: 1}
 }
 
-
-/* Footer */
-footer {
+.footer {
   padding: 5px;
-  text-align: left;
-  color: rgb(111, 103, 103);
+  text-align: center;
+  background-color: rgb(10, 10, 39);
+  color: white;
   font-size: 15px;
-  font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-family:  sans-serif;
 }
