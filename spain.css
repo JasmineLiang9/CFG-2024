@@ -6,11 +6,19 @@
     font-size: 16px;
     font-family:sans-serif;
     border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 7.5px;
+    margin-right: 0px;
 }
 
 /* Change the background colour of the home button when hovered over */
 .hmbtn:hover {
     background-color: #c33f27;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
   
   /* Dropdown Button */
@@ -21,6 +29,12 @@
     font-size: 16px;
     font-family: "Bebas Neue", sans-serif;
     border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 7.5px;
+    margin-left: 0px;
   }
   
   .dropdown {
@@ -35,6 +49,8 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
   }
   
   /* Links inside the dropdown */
@@ -43,6 +59,8 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: sans-serif;
+    transition: background-color 0.5s ease;
   }
   
   /* Change color of dropdown links on hover */
@@ -55,7 +73,11 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #c33f27;}
+  .dropdown:hover .dropbtn {
+      background-color: #c33f27;
+      transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
   
   /* Header */
   .header {
@@ -124,7 +146,7 @@
   
   .tab-link:hover {
       background-color: #c33f27;
-      color:#ffffff
+      color:#ffffff;
   }
   
   .tab-content {
@@ -242,6 +264,7 @@ img.displaySlide + .caption{
 }
 
 .social-icons a:hover {
-    color: #c33f27;  
+    color: #c33f27;
+    transform: scale(1.2);
 }
 
