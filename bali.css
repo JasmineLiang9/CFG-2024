@@ -1,15 +1,15 @@
 /* Home Button */
-.hmbtn {
+.btn {
   background-color: rgb(10, 10, 39);
   color: white;
   padding: 16px;
   font-size: 16px;
-  font-family:sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   border: none;
 }
 
-/* Change the background colour of the home button when hovered over */
-.hmbtn:hover {
+/* Change the background color of the home button when hovered over */
+.btn:hover {
   background-color: #c33f27;
 }
 
@@ -168,7 +168,6 @@ span {
 }
 .slider img{
   width: 100%;
-  max-height: 700px;
   display: none;
 }
 /* CAPTIONS 1 of 2*/
@@ -229,16 +228,4 @@ img.displaySlide + .caption{
   font-size: 15px;
   font-weight: lighter;
   font-family:  sans-serif;
-}
-
-.social-icons a {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 36px;  /* make icons bigger */
-  color: #ffffff;   /* icons white */
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #c33f27;  
 }
