@@ -1,5 +1,5 @@
 /* Home Button */
-.btn {
+.hmbtn {
     background-color: rgb(10, 10, 39);
     color: white;
     padding: 16px;
@@ -9,11 +9,11 @@
 }
 
 /* Change the background color of the home button when hovered over */
-.btn:hover {
+.hmbtn:hover {
     background-color: #c33f27;
 }
   
-  /* Dropdown Button */
+/* Dropdown Button */
   .dropbtn {
     background-color: rgb(10, 10, 39);
     color: white;
@@ -193,11 +193,13 @@ img.displaySlide{
 }
   
 /* Footer, if you choose to use one*/
-  footer {
+.footer {
     padding: 5px;
-    text-align: left;
-    color: rgb(10, 10, 39);
+    text-align: center;
+    background-color: rgb(10, 10, 39);
+    color: white;
     font-size: 15px;
-    font-weight: bold;
-    font-family: "Bebas Neue", sans-serif;
+    font-weight: lighter;
+    font-family:  sans-serif;
   }
+
