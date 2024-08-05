@@ -15,7 +15,7 @@
 
 <!-- Button that takes you to the homepage -->
     <a href="index.html">
-    <button class="btn">HOME</button>
+    <button class="hmbtn">HOME</button>
     </a>
 
 <!-- Button that has a dropdown of all countries -->
@@ -95,16 +95,27 @@
         <!-- Slideshow container -->
         <div class="slider">
             <div class="slides">
-                <img class="slide" src="images/balinese-cafe.jpg" alt="The aesthetic of a Balinese cafe">
-                <img class="slide" src="images/nasi-goreng.jpg" alt="Nasi Goreng - A Balinese Rice Dish">
-                <img class="slide" src="images/surfer-in-bali.jpg" alt="A surfer in Bali">
-                <img class="slide" src="images/ubud-padi-fields.jpg" alt="Ubud Padi Field">
-                <img class="slide" src="images/view-from-uluwatu-temple.jpg" alt="View from Uluwatu Temple">
+                <div class="slide-container">
+                    <img class="slide" src="images/balinese-cafe.jpg" alt="The aesthetic of a Balinese cafe">
+                </div>
+                <div class="slide-container">
+                    <img class="slide" src="images/nasi-goreng.jpg" alt="Nasi Goreng - A Balinese Rice Dish">
+                </div>
+                <div class="slide-container">
+                    <img class="slide" src="images/surfer-in-bali.jpg" alt="A surfer in Bali">
+                </div>
+                <div class="slide-container">
+                    <img class="slide" src="images/ubud-padi-fields.jpg" alt="Ubud Padi Field">
+                </div>
+                <div class="slide-container">  
+                    <img class="slide" src="images/view-from-uluwatu-temple.jpg" alt="View from Uluwatu Temple">
+                </div>    
             </div>
             <button class="prev" onclick="prevSlide()">&#10094</button>
             <button class="next" onclick="nextSlide()">&#10095</button>
         </div>    
     </div>
+</div>
 <!-- Add a footer for the Author of the page-->
     <footer class="footer">
          <p>Author of page: Laura Wheaton</p>
@@ -112,6 +123,7 @@
 
 <script src="bali.js"> </script>
 </body>
+
 
 
 </html>
