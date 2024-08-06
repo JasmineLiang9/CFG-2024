@@ -6,10 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utah Information Page</title>
+
 <!-- Remember and link to YOUR OWN countries css file -->
     <link rel="stylesheet" href="utah.css">
-<!--bootstrap to make columns user friendly-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!--LINK FOR SOCIALS-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
 
@@ -24,98 +27,115 @@
         <div class="dropdown-content">
           <a href="bali.html">Indonesia</a>
           <a href="spain.html">Spain</a>
-          <a href="bangkok.html">Thailand</a>
+          <a href="thailand.html">Thailand</a>
           <a href="utah.html">USA</a>
         </div>
       </div>
 
 <!-- Header -->
       <div class="header">
-        <h1>USA</h1>
-        <p>UTAH</p>
+        <h1>UTAH</h1>
+        <p>USA</p>
       </div>
 
-<!-- Weather Widget-->
-    <a class="weatherwidget-io" href="https://forecast7.com/en/39d32n111d09/utah/" data-label_1="UTAH" data-label_2="WEATHER" data-mode="Current" data-days="5" data-theme="pure" data-accent="#BBBBBB" data-textcolor="#6B6B6B" data-mooncolor="#6B6B6B" data-cloudcolor="##909090" data-cloudfill="#909090" >UTAH WEATHER</a>
+<!--Weather widget-->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/39d32n111d09/utah/" data-label_1="UTAH" data-label_2="WEATHER" data-mode="Current" data-days="5" data-theme="pure" data-accent="#BBBBBB" data-textcolor="#6B6B6B" data-mooncolor="#FFFFFF" data-cloudcolor="##909090" data-cloudfill="#909090" >UTAH WEATHER</a>
     <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
 
-<!-- Two side by side boxes/columns under the header -->
-    <div class="container">
+<!--Container Column 1 -->
+      <div class="container">
         <div class="boxone">
+<!-- Adding tabs to the top of the first box/column-->
 <!-- Tabs to the top of the first box/column-->
-        <div class="tab-header">
-            <div class="tab-link" onclick="showTab(0)">
-                Description
-            </div>
-            <div class="tab-link" onclick="showTab(1)">
-                Population
-            </div>
-            <div class="tab-link" onclick="showTab(2)">
-                Cuisine
-            </div>
-            <div class="tab-link" onclick="showTab(3)">
-                Places to Visit
-            </div>
-        
-        </div>
-        <div class="tab-content active">
-            <h2>Description</h2>
-            <p>
-                <span>Utah</span>, located in the western <span>United States</span>, is renowned for its diverse landscapes, ranging from the arid deserts and red rock formations of the southern regions to the forested mountains and vibrant cities in the north. The state's natural beauty is epitomized by its five national parks—Arches, Bryce Canyon, Canyonlands, Capitol Reef, and Zion—each offering unique geological wonders and outdoor activities. Salt Lake City, the state capital, is a cultural and economic hub, known for its historic ties to the Mormon Church and as a gateway to world-class skiing in the nearby Wasatch Mountains. Utah's rich history, outdoor recreational opportunities, and striking scenery make it a compelling destination for both residents and visitors.
-            </p>
-        </div>
+<div class="tab-header">
+    <div class="tab-link" onclick="showTab(0)">
+        Description
+    </div>
+    <div class="tab-link" onclick="showTab(1)">
+        Population
+    </div>
+    <div class="tab-link" onclick="showTab(2)">
+        Cuisine
+    </div>
+    <div class="tab-link" onclick="showTab(3)">
+        Places to Visit
+    </div>
 
-        <div class="tab-content">
-            <h2>Population</h2>
-            <p>
-                As of the most recent estimates in 2023, the population of Utah is approximately <span>3.4 million people</span>. This reflects steady growth over recent years, driven by factors such as a high birth rate, a strong economy, and an influx of new residents attracted to the state's quality of life and outdoor recreational opportunities. Salt Lake City, the largest city and state capital, is a significant contributor to this population growth.
-            </p>
-        </div>
+</div>
+<div class="tab-content active">
+    <h2>Description</h2>
+    <p>
+        <span>Utah</span>, located in the western <span>United States</span>, is renowned for its diverse landscapes, ranging from the arid deserts and red rock formations of the southern regions to the forested mountains and vibrant cities in the north. The state's natural beauty is epitomized by its five national parks—Arches, Bryce Canyon, Canyonlands, Capitol Reef, and Zion—each offering unique geological wonders and outdoor activities. Salt Lake City, the state capital, is a cultural and economic hub, known for its historic ties to the Mormon Church and as a gateway to world-class skiing in the nearby Wasatch Mountains. Utah's rich history, outdoor recreational opportunities, and striking scenery make it a compelling destination for both residents and visitors.
+    </p>
+</div>
 
-        <div class="tab-content">
-            <h2>Cuisine</h2>
-            <p>
-                Utah's cuisine is a delightful blend of traditional American fare with unique regional influences, often characterized by hearty, comfort foods reflecting its pioneer heritage. Signature dishes include fry sauce, a beloved condiment, and funeral potatoes, a cheesy potato casserole frequently served at gatherings. The state is also known for its scones, which are deep-fried and served with honey butter. With a growing food scene, particularly in Salt Lake City and Park City, visitors can enjoy diverse culinary experiences, from fine dining to innovative food trucks.
-            </p>
-            <p2>
-            Many tourists and travelers in Utah prefer to experience the state's stunning natural landscapes by camping or campervanning, which adds a rustic charm to their culinary adventures. Cooking on a campsite becomes an integral part of the outdoor experience, with meals often prepared over open fires or portable stoves. Campers enjoy simple yet satisfying dishes such as grilled meats, roasted vegetables, and classic s'mores, all while taking in the breathtaking views of Utah’s national parks and scenic byways. This blend of good food and nature creates memorable, immersive experiences for those exploring Utah's great outdoors.
-            </p2>
-        </div>
+<div class="tab-content">
+    <h2>Population</h2>
+    <p>
+        As of the most recent estimates in 2023, the population of Utah is approximately <span>3.4 million people</span>. This reflects steady growth over recent years, driven by factors such as a high birth rate, a strong economy, and an influx of new residents attracted to the state's quality of life and outdoor recreational opportunities. Salt Lake City, the largest city and state capital, is a significant contributor to this population growth.
+    </p>
+</div>
 
-        <div class="tab-content">
-            <h2>Places to Visit</h2>
-            <p>
-                <ol type="1">
-                <li><span>Arches National Park:</span> Visit Arches to marvel at over 2,000 natural sandstone arches, including the iconic Delicate Arch, set against a backdrop of striking red rock landscapes.</li>
-                <li><span>Bryce Canyon National Park:</span> Experience the otherworldly beauty of Bryce Canyon's unique hoodoos—tall, thin spires of rock that create a surreal, almost fairy-tale landscape.</li>
-                <li><span>Canyonlands National Park:</span> Explore the vast, rugged canyons and dramatic mesas of Canyonlands, where you can enjoy endless hiking, biking, and river rafting opportunities.</li>
-                <li><span>Capitol Reef National Park:</span> Discover Capitol Reef's hidden treasures, including its colorful cliffs, domes, and orchards in the heart of Utah’s red rock country.</li>
-                <li><span>Zion National Park:</span> Hike through the awe-inspiring Zion Canyon, with its towering sandstone cliffs and emerald pools, offering some of the most scenic trails in the country.</li>
-                </ol>
-            </p>
-        
-        </div>
-        </div>
+<div class="tab-content">
+    <h2>Cuisine</h2>
+    <p>
+        Utah's cuisine is a delightful blend of traditional American fare with unique regional influences, often characterized by hearty, comfort foods reflecting its pioneer heritage. Signature dishes include fry sauce, a beloved condiment, and funeral potatoes, a cheesy potato casserole frequently served at gatherings. The state is also known for its scones, which are deep-fried and served with honey butter. With a growing food scene, particularly in Salt Lake City and Park City, visitors can enjoy diverse culinary experiences, from fine dining to innovative food trucks.
+    </p>
+    <p2>
+    Many tourists and travelers in Utah prefer to experience the state's stunning natural landscapes by camping or campervanning, which adds a rustic charm to their culinary adventures. Cooking on a campsite becomes an integral part of the outdoor experience, with meals often prepared over open fires or portable stoves. Campers enjoy simple yet satisfying dishes such as grilled meats, roasted vegetables, and classic s'mores, all while taking in the breathtaking views of Utah’s national parks and scenic byways. This blend of good food and nature creates memorable, immersive experiences for those exploring Utah's great outdoors.
+    </p2>
+</div>
+
+<div class="tab-content">
+    <h2>Places to Visit</h2>
+    <p>
+        <ol type="1">
+        <li><span>Arches National Park:</span> Visit Arches to marvel at over 2,000 natural sandstone arches, including the iconic Delicate Arch, set against a backdrop of striking red rock landscapes.</li>
+        <li><span>Bryce Canyon National Park:</span> Experience the otherworldly beauty of Bryce Canyon's unique hoodoos—tall, thin spires of rock that create a surreal, almost fairy-tale landscape.</li>
+        <li><span>Canyonlands National Park:</span> Explore the vast, rugged canyons and dramatic mesas of Canyonlands, where you can enjoy endless hiking, biking, and river rafting opportunities.</li>
+        <li><span>Capitol Reef National Park:</span> Discover Capitol Reef's hidden treasures, including its colorful cliffs, domes, and orchards in the heart of Utah’s red rock country.</li>
+        <li><span>Zion National Park:</span> Hike through the awe-inspiring Zion Canyon, with its towering sandstone cliffs and emerald pools, offering some of the most scenic trails in the country.</li>
+        </ol>
+    </p>
+
+</div>
+</div>
 
         <div class="boxtwo">
-<!-- Slideshow container / column -->
-        <div class="slider">
-            <div class="slides">
-                <img class="slide" src="./image/Arches.jpg" alt="Image #1">
-                <img class="slide" src="./image/Bryce.jpg" alt="Image #2">
-                <img class="slide" src="./image/Zion.jpg" alt="Image #3">
-            </div>
-            <button class="prev" onclick="prevSlide()">&#10094</button>
-            <button class="next" onclick="nextSlide()">&#10095</button>
-        </div>    
+
+<!-- Slideshow container -->
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide-container">
+                        <img class="slide" src="Arches.jpg" alt="Arches National Park">
+                        <p class="caption">Arches National Park</p>
+                    </div>
+                    <div class="slide-container">
+                        <img class="slide" src="Bryce.jpg" alt="Bryce Canyon">
+                        <p class="caption">Bryce Canyon</p>
+                    </div>
+                    <div class="slide-container">
+                        <img class="slide" src="Zion.jpg" alt="Zion National Park">
+                        <p class="caption">Zion National Park</p>    
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>    
+        </div>
     </div>
     </div>
 
-<!--Footer-->
-    <footer class="footer"> Author: Louise L
-    </footer>
+<!-- Add a footer for the Author of the page-->
+<footer class="footer">
+    <p>Author of page: Louise L</p>
+<div class="social-icons">
+   <a href="https://www.linkedin.com/company/code-first-girls?originalSubdomain=uk" target="_blank" aria-label="Follow us on LinkedIn">
+       <i class="fab fa-linkedin"></i>
+   </a>
+</div>
+</footer>
 
 <script src="utah.js"> </script>
 
